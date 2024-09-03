@@ -81,8 +81,8 @@ It can also seen as a Regression problem </strong> </p>
 <strong>Performance metrics :</strong>
 </p>
 <ol>
-<li>Multi class log-loss</li>
-<li>Confusion Matrix</li>
+<li>Mean Absolute Percentage Error (MAPE)</li>
+<li>Root Mean Square Error (RMSE)</li>
 </ol>
 
 <hr width="100%" size="2">
@@ -95,43 +95,58 @@ It can also seen as a Regression problem </strong> </p>
   
   <br>
 
-  <h3 align= "center"><strong>Exploratory Data Analysis</strong></h3>
-  <p align= "center"><em> - Basic text preprocessing like removal of stopwords, removing extra spaces, lower casing text etc. </em></p>
-  <p align= "center"><em> - test, train and cross validation split </em></p>
-  <p align= "center"><em> - Univariate analysis </em></p>
+  <h3 align= "center"><strong>Data Preprocessing</strong></h3>
   
   <div align= "center">|</div>
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
-  <h3 align= "center"><strong>Prediction using Random Model </strong></h3>
+  <h3 align= "center"><strong>Temporal Train-Test split </strong></h3>
 
   <div align= "center">|</div>
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
-  <h3 align= "center">Building Machine Learning Models</h3>
-  <p align= "center"><em> - Baseline model is naive bayes hyperparameter tuned model  </em></p>
-  <p align= "center"><em> - K Nearest Neighbhor with hyperparameter tuning   </em></p>
-  <p align= "center"><em> - Logistic regression with and without class balancing and hyperparameter tuning  </em></p>
-  <p align= "center"><em> - Linear support vector machine with hyperparameter tuning </em></p> 
-  <p align= "center"><em> - Random forest classifier with hyperparameter tuning </em></p>  
-  <p align= "center"><em> - Linear support vector machine with hyperparameter tuning and one hot encoding as well as response coding </em></p>  
-  <p align= "center"><em> - Stacking classifier </em></p>  
-  <p align= "center"><em> - Maximum voting classifier </em></p>  
-  <p align= "center"><em> - Feature importance from all above models </em></p>  
+  <h3 align= "center">Preliminary data analysis</h3>
+  
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>
+  
 
+  <h3 align= "center">Sparse matrix representation</h3>
+  
+
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>
+
+  <h3 align= "center">Cold start problem</h3>
+
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>
+
+  <h3 align= "center">User-User similarity matrix</h3>
+  
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>  
+  
+  <h3 align= "center">Movie-Movie similarity matrix</h3>
+
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>
+
+  <h3 align= "center">Machine learning models</h3>
 
 
   
 </body>
 
 <hr width="100%" size="2">
-<br>
 
-<div align="center">
-  <img height="200" src="https://github.com/shreyjain99/Personalized-Cancer-Diagnosis/blob/main/src%20files/cancer-diagnostics-market.jpg"/>
-</div>
 
 <br>
 
@@ -139,10 +154,8 @@ It can also seen as a Regression problem </strong> </p>
 <strong>Future Scope :</strong>
 </p>
 <ol>
-<li>Apply All the models with tf-idf features (Replace CountVectorizer with tfidfVectorizer and run the same cells) </li>
-<li>Instead of using all the words in the dataset, use only the top 1000 words based of tf-idf values</li>
-<li>Apply Logistic regression with CountVectorizer Features, including both unigrams and bigrams </li>
-<li>Try any of the feature engineering techniques discussed in the course to reduce the CV and test log-loss to a value less than 1.0</li>
+<li>Instead of using 10K users and 1K movies to train the above models, use 25K users and 3K movies (or more) to train all of the above models.</li>
+<li>Tune hyperparamters of all the Xgboost models above to improve the RMSE.</li>
 </ol>
 
 <hr width="100%" size="2">
