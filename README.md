@@ -11,7 +11,7 @@
 <br>
 
 <p>
-<strong>Real World/Business Objective :</strong> Classify the given genetic variations/mutations based on evidence from text-based clinical literature.
+<strong>Real World/Business Objective :</strong>To Predict the rating that a user would give to a movie that he ahs not yet rated and minimize the difference between predicted and actual rating (RMSE and MAPE).
 </p>
 
 <br>
@@ -20,17 +20,14 @@
 <strong>Constraints :</strong>
 </p>
 <ol>
-<li>Interpretability </li>
-<li>Probability of a data-point belonging to each class is needed</li>
-<li>No low-latency requirement</li>
-<li>High Precision (Errors can be very costly)</li>
+<li>Interpretability (why was it recommended)</li>
 </ol>
 
 <br>
 
 <p>
-<strong>Get the data from :</strong> https://www.kaggle.com/c/msk-redefining-cancer-treatment/data
-<br>The data is provided by kaggle as Research Prediction Competition.
+<strong>Get the data from :</strong> https://www.kaggle.com/netflix-inc/netflix-prize-data/data
+<br> Dataset from Netflix's competition to improve their reccommendation algorithm (Netflix prize data competitiion)
 </p>
 
 <br>
@@ -38,19 +35,29 @@
 <p>
 <strong>Data Overview :</strong>
 <br>
-  <p>We have two data files: one conatins the information about the genetic mutations and the other contains the clinical evidence (text) that  human experts/pathologists use to classify the genetic mutations.Both these data files are have a common column called ID</p>
+<p> Data files : 
+<ul> 
+<li> combined_data_1.txt </li>
+<li> combined_data_2.txt </li>
+<li> combined_data_3.txt </li>
+<li> combined_data_4.txt </li>
+<li> movie_titles.csv </li>
+</ul>
+</p>
 <br>
 <p>
     Data file's information:
-    <ul>
-        <li>
-        training_variants (ID , Gene, Variations, Class)
-        </li>
-        <li>
-        training_text (ID, Text)
-        </li>
-    </ul>
 </p>
+<pre>  
+The first line of each file [combined_data_1.txt, combined_data_2.txt, combined_data_3.txt, combined_data_4.txt] contains the movie id followed by a colon. Each subsequent line in the file corresponds to a rating from a customer and its date in the following format:
+
+CustomerID,Rating,Date
+
+MovieIDs range from 1 to 17770 sequentially.
+CustomerIDs range from 1 to 2649429, with gaps. There are 480189 users.
+Ratings are on a five star (integral) scale from 1 to 5.
+Dates have the format YYYY-MM-DD.
+</pre>
 
 <br>
 
