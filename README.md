@@ -68,9 +68,11 @@ Dates have the format YYYY-MM-DD.
 <p>
 <strong>ML Problem Formulation :</strong>
 </p>
-<p> <strong>There are nine different classes a genetic mutation can be classified into => Multi class classification problem</strong> </p>
+<p> <strong>For a given movie and user we need to predict the rating would be given by him/her to the movie. 
+The given problem is a Recommendation problem 
+It can also seen as a Regression problem </strong> </p>
 <br>
-<p>Objective is to Predict the probability of each data-point belonging to each of the nine classes.</p>
+<p>Objective is to Minimize RMSE and Try to provide some interpretability.</p>
 
 <br>
 <br>
