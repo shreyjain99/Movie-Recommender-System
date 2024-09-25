@@ -11,7 +11,7 @@
 <br>
 
 <p>
-<strong>Real World/Business Objective :</strong>To Predict the rating that a user would give to a movie that he ahs not yet rated and minimize the difference between predicted and actual rating (RMSE and MAPE).
+<strong>Real World/Business Objective :</strong>To Predict the rating that a user would give to a movie that the user has not yet rated and minimize the difference between predicted and actual rating (RMSE and MAPE).
 </p>
 
 <br>
