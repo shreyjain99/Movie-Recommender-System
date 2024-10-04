@@ -159,3 +159,25 @@ It can also seen as a Regression problem </strong> </p>
 </ol>
 
 <hr width="100%" size="2">
+<br>
+
+<p>
+<strong>Skills and Software Tools Used in the Project :</strong>
+</p>
+<ul>
+    <li>Data Preprocessing</li>
+    <li>Temporal Analysis</li>
+    <li>Exploratory Data Analysis (EDA)</li>
+    <li>Sparse Matrix Representation</li>
+    <li>Cold Start Problem Solutions</li>
+    <li>User-User Similarity Matrix</li>
+    <li>Movie-Movie Similarity Matrix</li>
+    <li>Machine Learning Models</li>
+    <li>Regression</li>
+    <li>Python</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>XGBoost</li>
+</ul>
+
+<hr width="100%" size="2">
